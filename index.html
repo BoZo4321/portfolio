@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Božidar Radosavljević — Software Developer</title>
+  <meta name="description" content="Software developer in Belgrade, Serbia. Java / Spring Boot backend, full-stack personal projects in Kotlin, C# and Python.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo"><span class="prompt">~/</span>bozidar_r</a>
+    <nav>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+      <a href="assets/CV_Bozidar_Radosavljevic.pdf" class="nav-cv" download>cv.pdf ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-text">
+      <p class="mono muted">Who am I</p>
+      <h1>Božidar Radosavljević</h1>
+      <p class="subtitle">Software developer in Belgrade, Serbia</p>
+      <p class="bio">
+        I'm a full-stack developer with a strong focus on the backend. Most of my work is in
+        Java and Spring Boot: designing REST APIs, modelling data in PostgreSQL, and making
+        services behave under real load. On the frontend I work with React, so I can take a
+        feature from the database all the way to the UI. I'm also interested in moving toward
+        AI and LLM-based applications.
+      </p>
+      <div class="actions">
+        <a href="assets/CV_Bozidar_Radosavljevic.pdf" class="btn btn-primary" download>Download CV</a>
+        <a href="#contact" class="btn btn-outline">Contact me</a>
+        <a href="https://github.com/BoZo4321" class="link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/bozidar-radosavljevic-8bbb261a0/" class="link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="status mono"><span class="dot"></span>open to new opportunities</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="experience" class="container section">
+    <h2><span class="hash">#</span> Experience</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Backend AI Engineering Intern <span class="at">@ FlyRank</span></h3>
+        </div>
+        <span class="date">Aug 2026 — Oct 2026 · Remote</span>
+      </div>
+      <ul>
+        <li>Built a Python (FastAPI) backend step by step: REST API, PostgreSQL, Docker, authentication and LLM API integration.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>LLM APIs</span></div>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Java Backend Developer <span class="at">@ Orion Innovation</span></h3>
+        </div>
+        <span class="date">Feb 2026 — Apr 2026 · Belgrade</span>
+      </div>
+      <ul>
+        <li>Worked on a team tasked with rewriting a legacy Python standalone application into a Java 17 Spring Boot web service — controllers, services, JPA/Hibernate, centralized error handling.</li>
+        <li>Replaced <code>Thread.sleep</code>-based delays with scheduler-based, non-blocking processing for thread reuse in a production system handling ~3M daily transactions; tracked performance in Grafana.</li>
+        <li>Implemented contract-first (OpenAPI) REST interfaces, integrated external SOAP services and secured the API with Spring Security (JWT).</li>
+      </ul>
+      <div class="tags"><span>Java 17</span><span>Spring Boot</span><span>JPA</span><span>OpenAPI</span><span>SOAP</span><span>JWT</span><span>Grafana</span></div>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Software Developer in Test <span class="at">@ Grid Dynamics</span></h3>
+        </div>
+        <span class="date">Mar 2025 — Oct 2025 · Belgrade</span>
+      </div>
+      <ul>
+        <li>Wrote Java automation for REST APIs (RestAssured, full CRUD) and end-to-end web flows (Selenium, Page Object Model, TestNG).</li>
+        <li>Integrated suites into Maven/Jenkins CI and worked with backend developers to catch regressions across environments.</li>
+      </ul>
+      <div class="tags"><span>Java</span><span>RestAssured</span><span>Selenium</span><span>Jenkins</span><span>Maven</span></div>
+    </article>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container section">
+    <h2><span class="hash">#</span> Projects</h2>
+    <div class="grid">
+
+      <a class="card" href="https://github.com/BoZo4321/Nordeus-full-stack-challenge" target="_blank" rel="noopener">
+        <div class="card-top"><span class="folder">▸</span> Nordeus-full-stack-challenge <span class="arrow">↗</span></div>
+        <p>Turn-based RPG. Spring Boot backend for runs, battle turns, monster AI and rewards with PostgreSQL-backed state; Unity (C#) client with a custom HTTP client consuming the same API.</p>
+        <div class="tags"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Unity / C#</span><span>Docker</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/BoZo4321/Connect-four-game" target="_blank" rel="noopener">
+        <div class="card-top"><span class="folder">▸</span> Connect-four-game <span class="arrow">↗</span></div>
+        <p>Full-stack browser game. Kotlin/JS (Compose for Web) frontend, Spring Boot REST backend, results and leaderboard in PostgreSQL, whole stack containerized.</p>
+        <div class="tags"><span>Kotlin</span><span>Spring Boot</span><span>Compose for Web</span><span>PostgreSQL</span><span>Docker</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/BoZo4321/ddi-file-decryption" target="_blank" rel="noopener">
+        <div class="card-top"><span class="folder">▸</span> ddi-file-decryption <span class="arrow">↗</span></div>
+        <p>Client/server over raw TCP with a custom protocol. Server decrypts TXT/XLSX files using AES keys from SQLite, zips results and logs every step. Strategy-based processors, end-to-end socket test.</p>
+        <div class="tags"><span>Java</span><span>TCP sockets</span><span>AES</span><span>SQLite</span><span>JUnit</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/BoZo4321/adapty-hackathon-git-paid" target="_blank" rel="noopener">
+        <div class="card-top"><span class="folder">▸</span> Revenue Rescue — Adapty Hackathon <span class="arrow">↗</span></div>
+        <p>Churn prevention for subscription apps on Adapty. An activity tracker follows how users engage with the app, and an ML model scores each user's risk of leaving. Users at risk get targeted offers, such as discounts or upgrades, through Adapty paywalls, and a dashboard shows at-risk subscribers, churn trends and estimated revenue saved.</p>
+        <div class="tags"><span>React</span><span>TypeScript</span><span>Recharts</span><span>Vite</span><span>FastAPI</span><span>Adapty</span></div>
+      </a>
+
+    </div>
+    <p class="more"><a href="https://github.com/BoZo4321?tab=repositories" target="_blank" rel="noopener" class="link">all repositories on GitHub ↗</a></p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container section">
+    <h2><span class="hash">#</span> Skills</h2>
+    <div class="skills">
+      <div class="skill-row"><span class="key">languages:</span><div class="tags"><span>Java</span><span>C#</span><span>TypeScript</span><span>Kotlin</span><span>Python</span><span>SQL</span></div></div>
+      <div class="skill-row"><span class="key">backend:</span><div class="tags"><span>Spring Boot</span><span>Spring Data JPA</span><span>Hibernate</span><span>Spring Security (JWT)</span><span>REST / OpenAPI</span><span>ASP.NET Core</span><span>FastAPI</span></div></div>
+      <div class="skill-row"><span class="key">frontend:</span><div class="tags"><span>React</span><span>Kotlin/JS</span><span>HTML</span><span>CSS</span></div></div>
+      <div class="skill-row"><span class="key">databases:</span><div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span><span>H2</span></div></div>
+      <div class="skill-row"><span class="key">devops:</span><div class="tags"><span>Docker</span><span>Kubernetes</span><span>GitLab CI/CD</span><span>Jenkins</span><span>Maven</span><span>Linux</span></div></div>
+      <div class="skill-row"><span class="key">monitoring:</span><div class="tags"><span>Grafana</span><span>k6</span><span>structured logging</span></div></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="container section">
+    <h2><span class="hash">#</span> Education</h2>
+    <div class="edu">
+      <div class="edu-item">
+        <div><h3>Faculty of Organizational Sciences, University of Belgrade</h3><p class="muted">Information Systems and Technologies</p></div>
+        <span class="date">2021 — present</span>
+      </div>
+      <div class="edu-item">
+        <div><h3>Faculty of Mathematics, University of Belgrade</h3><p class="muted">Informatics</p></div>
+        <span class="date">2018 — 2021</span>
+      </div>
+      <div class="edu-item">
+        <div><h3>Google Cloud Certified — Cloud Digital Leader</h3>
+          <p><a class="link" href="https://www.credly.com/badges/7cd1e165-2916-4661-a99e-8b30a34c3468/public_url" target="_blank" rel="noopener">view credential ↗</a></p></div>
+        <span class="date">certification</span>
+      </div>
+      <div class="edu-item">
+        <div><h3>Languages</h3><p class="muted">Serbian (native) · English (C1) · Italian (A1)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container section">
+    <h2><span class="hash">#</span> Contact</h2>
+    <div class="terminal">
+      <div class="code-head"><span></span><span></span><span></span><em>bash</em></div>
+      <div class="term-body">
+        <p><span class="prompt">$</span> echo $EMAIL</p>
+        <p class="out"><a href="mailto:bozo.radosavljevicf@gmail.com">bozo.radosavljevicf@gmail.com</a>
+          <button class="copy" data-copy="bozo.radosavljevicf@gmail.com">copy</button></p>
+        <p><span class="prompt">$</span> open --github --linkedin</p>
+        <p class="out">
+          <a href="https://github.com/BoZo4321" target="_blank" rel="noopener">github.com/BoZo4321</a><br>
+          <a href="https://www.linkedin.com/in/bozidar-radosavljevic-8bbb261a0/" target="_blank" rel="noopener">linkedin.com/in/bozidar-radosavljevic</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container footer mono muted">
+  <span>© <span id="year"></span> Božidar Radosavljević</span>
+</footer>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
